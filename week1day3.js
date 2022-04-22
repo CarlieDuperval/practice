@@ -13,7 +13,7 @@ function assignGrade(score) {
     return grade[1];
   } else if (score > 69 && score < 80) {
     return grade[2];
-  } else if (score > 59 && score < 69) {
+  } else if (score > 59 && score < 70) {
     return grade[3];
   } else {
     return grade[4];
@@ -27,11 +27,11 @@ console.log("Your Grade is:", assignGrade(90))
 function assignGrade1(score) {
   if (score > 90) {
     return "A";
-  } else if (score > 80) {
+  } else if (score >= 80) {
     return "B";
-  } else if (score > 70) {
+  } else if (score >= 70) {
     return "C";
-  } else if (score > 65) {
+  } else if (score >= 60) {
     return "D";
   } else {
     return "F";
@@ -39,4 +39,38 @@ function assignGrade1(score) {
 }
 
 console.log("Your grade is:", assignGrade1(80));
-//console.log('Your grade is:', assignGrade1(35));
+console.log('Your grade is:', assignGrade1(35));
+
+
+// Create a function which returns the number of true values there are in an array.
+const testArray = [ true, false, false, true, false, false, false, true, true, true, false ]
+
+function checkTrueValue(arr) {
+  let result = 0;
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] === true) {
+      result++;
+    }
+  }
+  return result;
+}
+console.log(checkTrueValue(testArray));
+
+
+
+
+
+// Pyramid problem:
+// print:  (using a loop)
+// #
+// ##
+// ###
+// ####
+// #####
+
+let result = '#'
+for ( let i = 0; i < 5 ; i++){
+    console.log(result)
+    result += "# "
+
+}

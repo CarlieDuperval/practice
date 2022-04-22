@@ -5,7 +5,7 @@ const cars = {
     model:'500',
     color:'white'
 }
-console.log(cars)
+//console.log(cars)
 
 
 
@@ -15,13 +15,43 @@ const person = {
     age: 35
     
 }
-   console.log(person.age) 
+ //  console.log(person.age) 
 
-//    Homework will help you practice loops, arrays, objects, and functions.
-// Create a folder inside the code folder called homework.
-// Inside of the homework folder, create a file named day-two.js and do these:
-// 1. Write a function that adds two numbers together
-// 2. Create a function that returns the number of true values there are in an array.
-// const testArray = [ true, false, false, true, false, false, false, true, true, true, false ]
-// 3. Write a function that receives a car object as an argument and outputs the cars make and model.
-// 4. Write a function to get the first element in an array.
+
+// find the max in an array of number
+
+const findMaxNumber = (arr) => {
+    if (arr.length === 0){
+        return;
+    }
+    let max = arr[0]
+    for(let i = 0; i < arr.length; i++){
+
+        if (arr[i] > max){
+            max = arr[i] 
+        } else {
+            return max
+       }      
+    }
+}
+console.log(findMaxNumber([1, 45, 6, 78, 90, 0, 34, -1]))
+
+
+
+
+
+
+const findMax = (arr) => {
+    let max;
+
+    for(let i = 0; i < arr.length; i++){
+
+        if(arr[i] > arr[arr.length-1]){
+            max = arr[i];
+
+        }
+    }
+
+}
+
+//console.log(findMax([16, 5, 6, 78, 90, 0, 34, 76]))
