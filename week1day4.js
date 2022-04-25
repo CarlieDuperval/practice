@@ -10,25 +10,26 @@ console.log(countBaskeballPoints(9, 10))
 
 let getMinMax = (arr) => {
    
-    let max;
-    let min;
+    let max = arr[0];
+    let min = arr[0];
  
     for (let i = 0; i < arr.length; i++) {
     
-      if(arr[i] < arr[1]){  // we need at 2 numbers for the comparaison
-        min = arr[i];
+      if(max < arr[1]){  // we need at 2 numbers for the comparaison
+        max = arr[i];
       }
 
-      if(arr[i] > arr[arr.length-1]){
-        max = arr[i];
+      if(min > arr[i]){
+        min = arr[i];
       }
       
     }
-    console.log(min, max)
-    console.log('The minimun value is :', min, 'The maximum value is :', max);
-   
+    return [min , max]
+    
   }
- getMinMax([23, 566, 6767, 34, 23, 0, 34, 54, 68])
+console.log(min, max)
+console.log('The minimun value is :', min, 'The maximum value is :', max);
+getMinMax([23, 566, 6767, 34, 23, 0, 34, 54, 68])
 
 
 // 3. Create a function that converts a string to uppercase letters:
