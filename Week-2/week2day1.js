@@ -36,3 +36,8 @@ console.log( 'This is a second way to find Min and Max', findMinMax(minmax))
 // {other person name} is {older than / younger than / the same age as} me.
 
 
+
+
+
+//Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.
+
