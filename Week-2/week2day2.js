@@ -30,8 +30,11 @@ console.log( 'The number of vowels is ',findVowelQty("I love my country"))
 
 
 
-
-
-
 // 2. Create a function that filter out negative given an array of numbers
+
+
+
+
+
+
 // 3. Create a function that calculates the sum of odd numbers grather than ten and less than 30
