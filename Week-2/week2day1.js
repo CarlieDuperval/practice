@@ -35,9 +35,4 @@ console.log( 'This is a second way to find Min and Max', findMinMax(minmax))
 
 // {other person name} is {older than / younger than / the same age as} me.
 
-const compareAge = (p1, p2, p3)=> {
-    if( p1 > p2){
-        console.log()
-    }
 
-}
