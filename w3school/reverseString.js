@@ -12,19 +12,39 @@ const reverseString = (str) => {
 
 
 
-// Write a wordReverser() function that will take a given string and reverse the order of the words. You may assume that the string is a sentence that contains only letters and spaces, with all words separated by one space.
+// Write a wordReverser() function that will take a given string and reverse the order of the words. 
 
-// For example, wordReverser("Codecademy rules") should return "rules Codecademy" and wordReverser("May the Fourth be with you") should return "you with be Fourth the May".
+// 0-Write a function
+//1-Function that takes (string)
+//2- return => reverse order of the words , We need a loop for that
 
-//let words = "May the Fourth be with you"
+const wordReverser = (string) => {
+    let myArr = string.split(' ')
+    return myArr.reverse().join(' ')
+}
+console.log(wordReverser('Boca Code !!!!!!! In code we trust'))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 const reverseWord = (phrase) => {
     let newArray = phrase.split(" ")
-    console.log(newArray)
-    let reverseString = ''
-    for(let i = newArray.length-1; i >= 0; i-- ){ 
-        reverseString += newArray[i]
-    }  
-     return reverseString.toString(',')
-
+    return newArray.reverse().join(" ")
 }
-console.log(reverseWord("May the Fourth be with you"))
+// console.log(reverseWord("May the Fourth be with you"))
+
+

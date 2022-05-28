@@ -13,21 +13,34 @@
 
 
 // ?????????????????
-let sentences = ' carlie Ritchell Duperval Dorlus'
-let myCharacter = 'i'
+// let sentences = ' carlie Ritchell Duperval Dorlus'
+// let myCharacter = 'i'
 
-const characterCount =(myCharacter, str) => {
-    let arr = [...str]
-    let sum = 0
-    for(let i = 0; i< arr.length; i++){
-        if(arr[i] == myCharacter){
-            sum++;
-        }
-    }
-    return sum
-}
-console.log(characterCount(sentences, myCharacter))
+// const characterCount =(myCharacter, str) => {
+//     let arr = [...str]
+//     let sum = 0
+//     let countArray =[]
+//     for(let i = 0; i< arr.length; i++){
+//         if(arr[i] == myCharacter){
+//             arr[i].push(countArray)
+//             sum++;
+//         }
+//     }
+//     return sum
+// }
+// console.log(characterCount(sentences, myCharacter))
 
 
+// const countStrCharacter = (target, string) => {
+//     let newArray = [...string]
+//     let count = 0
+//     for(let i = 0; i < newArray.lenth; i++){
+//         if(newArray.indexOf(target) !== -1){
+//             count++
 
+//         }
+//     }
+//     return count
+// }
 
+// console.log(countStrCharacter(sentences, myCharacter))
