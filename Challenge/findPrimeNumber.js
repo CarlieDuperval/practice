@@ -6,6 +6,8 @@
 
 const test = [ 1, 2, 3, 5, 7, 4, 6, 11] // 28
 
+const test2 = [3, 54, 34, 90, 66, 99, 7, 13]
+
 const primeNumber = (num) => {
     for (let i = 2; i < num; i++)
     if ( num % i === 0) return false
@@ -19,7 +21,7 @@ const findPrimeNumber = (arr) => {
     }
     return sum;
 }
-console.log(findPrimeNumber(test))
+console.log(findPrimeNumber(test2))
 
 
 
