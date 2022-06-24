@@ -31,3 +31,21 @@ const getUniqueElement = (arr) => {
 }
 
 console.log(getUniqueElement(myArr))
+
+
+
+const stringArr = ['Todd', 'Darie', 'Todd', 'Carlie', 'Harold', 'Darie', 'Jean']
+
+const getUniqueArray = (myArray) => {
+
+    let newArray = []
+    myArray.forEach(element =>{
+        if(!newArray.includes(element)){
+            newArray.push(element)
+        }
+
+    })
+    return newArray
+
+}
+console.log(getUniqueArray(stringArr))
