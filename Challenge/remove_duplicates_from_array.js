@@ -30,7 +30,7 @@ const getUniqueElement = (arr) => {
     return uniqueArr
 }
 
-console.log(getUniqueElement(myArr))
+console.log(` this is the new array of numbers`, getUniqueElement(myArr))
 
 
 
@@ -48,4 +48,4 @@ const getUniqueArray = (myArray) => {
     return newArray
 
 }
-console.log(getUniqueArray(stringArr))
+console.log(` this is the new array of string` ,getUniqueArray(stringArr))
