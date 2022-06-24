@@ -9,3 +9,7 @@
 // Notes
 // The array of numbers will be unsorted (not in order).
 // Only one number will be missing.
+
+
+// create funtion findMissingNum = (arr) => {}
+// loop :
