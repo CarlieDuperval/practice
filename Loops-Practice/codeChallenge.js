@@ -4,6 +4,32 @@ const shoppingList = ["Milk", "Bread", "eggs"]
 const cart = ["beer", "Wine", "Chips", "Bread"]
 
 
+// studio coding 
+// crate an empty arry to store the new list
+// iterate over all elements of arr1 with a loop
+//Iterate over all elements of array2 using another loop and check if array1[element] is present in array2.
+
+const array1 = ['Orange', 'Pineapple', 'Grape']
+const array2 = ['Strawberry', 'Orange', 'Grape']
+
+
+const findSimilarItem = (arr , arr2) => {
+    let newArr = [7 ]
+    for (let i= 0; i > arr.length; i++){
+        arr = newArr
+    }
+
+    for (let j= 0; j > arr2.length; j++){
+    if(arr[i] === arr2[j]){
+        arr2.splice(j, 1);
+        j--;
+        newArr.push(arr[i])
+    }
+}
+    return newArr
+}
+console.log(newArr)
+
 const newList = shoppingList.filter(item => !cart.includes(item))
 
-console.log(newList)
+//console.log(newList)
