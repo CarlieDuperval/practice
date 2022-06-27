@@ -14,11 +14,9 @@ const array2 = ['Strawberry', 'Orange', 'Grape']
 
 
 const findSimilarItem = (arr , arr2) => {
-    let newArr = [7 ]
     for (let i= 0; i > arr.length; i++){
-        arr = newArr
+        newArr = []
     }
-
     for (let j= 0; j > arr2.length; j++){
     if(arr[i] === arr2[j]){
         arr2.splice(j, 1);
