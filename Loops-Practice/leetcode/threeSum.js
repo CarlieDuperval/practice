@@ -19,3 +19,10 @@
 
 // Input: nums = [0]
 // Output: []
+
+// function takes an array of integer arr
+// loop in the array to search the first index : i
+// loop in the array to search the second index :j
+// loop in the array to search the third index : k
+// condition : i != j; i != k; k != j && arr[i] + arr[j] + arr[k] = 0
+
