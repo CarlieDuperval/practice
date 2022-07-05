@@ -7,6 +7,7 @@
 
 //  write a fuction addsUpNumberToTarget()
 // function takes 2 argument (arr, target)
+// need 2 loops
 // if arr[i] + arr[i+i] == target
 // return indexOf[i] and arr[i+i]
 
