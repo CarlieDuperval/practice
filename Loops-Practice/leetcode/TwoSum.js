@@ -33,23 +33,20 @@
 // -10 9 <= target <= 10 9
 // Only one valid answer exists.
  
-const nums = [2, 7, 11, 15]
-const target = 9
 
+// This is not ok
 const addsUpNumberToTarget = (arr , target ) => {
-    const newArr = []
-    for( let i = 0 ; i < arr.lenght; i++) {
-        if(arr[i] + arr[i+i] === target ){
-        }
-        let result = newArr.push(arr[i], arr[i+i])
-        return result
+   for( let i = 0 ; i < arr.lenght; i++) {
+        if(arr.indexOf(i) + arr.indexOf (i+1) == target ){
+            return [i, (i+1)]
+        } 
     }
 }
-//console.log(addsUpNumberToTarget(nums, target))
+console.log(addsUpNumberToTarget([3, 2, 7, 1, 9], 10))
 
 
-const num1= [2, 7, 11, 15]
-const target1 = 9
+
+//this is ok
 
 const addUpNumberToTarget = (nums , target) => {
     for (let i =0; i < nums.length; i++){
