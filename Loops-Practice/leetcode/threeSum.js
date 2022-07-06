@@ -27,7 +27,7 @@
 // condition : i != j; i != k; k != j && nums[i] + nums[j] + nums[k] = 0
 // return triplest nums[i], nums[j], nums[k]
 
-// This is not ok 
+// 
 const addsUpThreeSumEqualZero = (nums) => {
     let newNum = []
     for(let i = 0; i < nums.length; i++){
@@ -50,7 +50,7 @@ console.log(addsUpThreeSumEqualZero([-1, 0, 1, 2, -1, -4]))
 
 
 
-//  
+//  this is from leet code
 const threeSum = (nums) => {
     const results = []
     if (nums.length < 3) // having at least 3 numbers
