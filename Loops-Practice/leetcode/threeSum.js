@@ -29,18 +29,22 @@
 
 //  To be review with Darie or any Senior
 const addsUpThreeSumEqualZero = (nums) => {
+    const result = []
+    if(nums.length < 3)
+    return result
+    console.log(result)
     for(let i = 0; i < nums.length; i++){
         for (let j = i+ 1; j < nums.length; j++){
             for ( let k = j+1; k < nums.length; k++){
                 if( i !=j && i != k && j != k ){
                     if( nums[i] + nums[j] + nums[k] == 0){
-                        return ([nums[i], nums[j], nums[k]])
+                        result.push([nums[i], nums[j], nums[k]])
                     }
                 }
             }
 
         }
-    }
+    }return result
 }
 console.log(addsUpThreeSumEqualZero([-1, 0, 1, 2, -1, -4]))
 
