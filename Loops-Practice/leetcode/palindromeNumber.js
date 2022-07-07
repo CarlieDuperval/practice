@@ -53,4 +53,4 @@ const isPalindrome = (x) =>  {
     return x === reverse
 };
 
-console.log(isPalindrome(121))
+console.log(isPalindrome(1145411))
