@@ -30,23 +30,33 @@
 //  To be review with Darie or any Senior
 const addsUpThreeSumEqualZero = (nums) => {
     const result = []
-    if(nums.length < 3)
-    return result
-    console.log(result)
+    const set = new Set()
+    if (nums.length < 3) return result;
     for(let i = 0; i < nums.length; i++){
         for (let j = i+ 1; j < nums.length; j++){
-            for ( let k = j+1; k < nums.length; k++){
-                if( i !=j && i != k && j != k ){
-                    if( nums[i] + nums[j] + nums[k] == 0){
-                        result.push([nums[i], nums[j], nums[k]])
+            for ( let k = j+1; k < nums.length; k++){          
+                    if( nums[i] + nums[j] + nums[k] === 0){
+                        let duplicated = set.has(nums[i]) && set.has(nums[j]) && set.has(nums[k])
+                       if(!duplicated){
+                            result.push([nums[i], nums[j], nums[k]])
+                            set.add(nums[i])
+                            set.add(nums[j])
+                            set.add(nums[k])
+                        }
                     }
-                }
+                
             }
 
         }
-    }return result
+    }
+    return result
 }
-console.log(addsUpThreeSumEqualZero([-1, 0, 1, 2, -1, -4]))
+console.log(addsUpThreeSumEqualZero([-1,0,1,2,-1,-4,-2,-3,3,0,4]))
+
+
+
+
+
 
 
 
