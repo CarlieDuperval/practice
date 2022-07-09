@@ -64,6 +64,29 @@
 // if s[i] === C && s[i+1] === D  => result = 0 + 400
 // if s[i] === C && s[i+1] === M  => result = 0 + 900
 
-
+const convertRomanToInt = (s) => {
+    const result = 0
+    for(let i = 0; i < s.length; i++){
+        if(s[i] === 'I' && s[i+1] === 'V'){
+            result += 4 
+            console.log(result)
+        }
+        else if(s[i] === 'I' && s[i+1] === 'X'){
+            result += 9
+        }
+        else if (s[i] === 'X' && s[i+1] === 'L'){
+            result += 40
+        }
+        else if(s[i] === 'X' && s[i+1] === 'V'){
+            result += 90
+        }
+        else if(s[i] ===' C' && s[i+1] === 'D'){
+            result = +400
+        }
+        else if(s[i] === 'C' && s[i+1] === 'M'){
+            result +=900
+        }
+    }
+}
 
 
