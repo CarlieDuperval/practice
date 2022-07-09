@@ -89,12 +89,12 @@ const convertRomanToInt = (s) => {
             result += 40;
             i++;
         }
-        else if(s[i] === 'X' && s[i+1] === 'V'){
+        else if(s[i] === 'X' && s[i+1] === 'C'){
             result += 90
             i++;
         }
-        else if(s[i] ===' C' && s[i+1] === 'D'){
-            result = +400
+        else if(s[i] === 'C' && s[i+1] === 'D'){
+            result +=400
             i++;
         }
         else if(s[i] === 'C' && s[i+1] === 'M'){
@@ -106,5 +106,7 @@ const convertRomanToInt = (s) => {
     }
     return result
 }
-console.log(convertRomanToInt("MCMLXXXIX"))
+//console.log(convertRomanToInt("MCMLXXXIX"))
+console.log(convertRomanToInt("MCMXCIV")) // M=1000 CM=900 X=10 C=100 IV=4 //1994
+console.log(convertRomanToInt("MCDLXXVI")) // M=1000 CD=400 L=50 XX=20 VI=6 // 1476
 
