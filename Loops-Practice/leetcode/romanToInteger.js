@@ -42,3 +42,28 @@
 // 1 <= s.length <= 15
 // s contains only the characters ('I', 'V', 'X', 'L', 'C', 'D', 'M').
 // It is guaranteed that s is a valid roman numeral in the range [1, 3999].
+
+// convert a roman numeral to number
+// Create key value pair object to look up the value of each Roman numeral
+// const romanNumeral {
+    // I : 1
+    // V : 5
+    // X : 10
+    // L : 50
+    // C : 100
+    // D : 500
+    // M : 1000 
+//}
+// for a given string = s we will (check if index in each index in the ) iterate inside the string  
+// we will have the condition for subtracted number :
+// let assume  result = 0 (to be updated)
+// if s[i] === I && s[i+1] === V  => result = 0 + 4
+// if s[i] === I && s[i+1] === X  => result = 0 + 9
+// if s[i] === X && s[i+1] === L => result = 0 + 40
+// if s[i] === X && s[i+1] === V  => result = 0 + 90
+// if s[i] === C && s[i+1] === D  => result = 0 + 400
+// if s[i] === C && s[i+1] === M  => result = 0 + 900
+
+
+
+
