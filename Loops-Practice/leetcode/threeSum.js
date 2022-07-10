@@ -31,7 +31,8 @@
 const addsUpThreeSumEqualZero = (nums) => {
     const result = []
     const set = new Set()
-    if (nums.length < 3) return result;
+    if (nums.length < 2) 
+    return result;
     for(let i = 0; i < nums.length; i++){
         for (let j = i+ 1; j < nums.length; j++){
             for ( let k = j+1; k < nums.length; k++){          
@@ -51,7 +52,8 @@ const addsUpThreeSumEqualZero = (nums) => {
     }
     return result
 }
-console.log(addsUpThreeSumEqualZero([-1,0,1,2,-1,-4,-2,-3,3,0,4]))
+console.log(addsUpThreeSumEqualZero([-1,0,1,2,-1,-4,-2,-3,3,0,4])) // [[-4,0,4],[-4,1,3],[-3,-1,4],[-3,0,3],[-3,1,2],[-2,-1,3],[-2,0,2],[-1,-1,2],[-1,0,1]]
+//console.log(addsUpThreeSumEqualZero([-1,0,1,2,-1,-4,-2,-3,3,0,4]))
 
 
 
