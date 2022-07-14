@@ -26,14 +26,37 @@
 //   k=j+2  if k = {  && k+1 = }  true
 
 
+
 const isValid = (s) => {
-    for(let i=0; i < s.length; i++){
-        if( s[i]=== '(' && s[i+1] === ')' ){
-            return true
+    if(s  == " "){
+        return true
+    }
+    if (s.length < 2){
+        return false
+    }
+    const pairBrackets = {
+       "{": "}",
+       "(": ")",
+       "[" : "]"
+    }
+    let stack = []
+    let arr = s.toString().split("")
+    for(let i= 0; i < arr.length; i++){
+        let bracket = arr[i]
+        if(pairBrackets[bracket]){
+            stack.push(bracket)
         }
-        else {
-            return false
+        else{
+            let checkBrk = stack.pop()
+            if(pairBrackets[checkBrk] !== bracket){
+                return false
+            }
         }
-    } 
+    }
+    if( stack.length > 0){
+        return false
+    }
+    return true
 }
-console.log(isValid('()'))
+console.log(isValid("{[]}"))
+console.log(isValid("(]"))
