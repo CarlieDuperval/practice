@@ -20,10 +20,13 @@
 // Output: false
 
 // Check if valid
-//  string = "()"
-// loop inside the string if i = (  && i+1 = ) True
-//   j=i+2  if  j = [  && j+1 = ] True
-//   k=j+2  if k = {  && k+1 = }  true
+//  if string == " " : is true
+// string.length < 2 is false
+//  create an object with the bracket const pairBaracket = { [ ; ], { :}, ( ; )}
+// create empty  stack to put the value 
+// create empty array to push the pair bracket
+// loop inside the string if 
+
 
 
 
@@ -40,7 +43,7 @@ const isValid = (s) => {
        "[" : "]"
     }
     let stack = []
-    let arr = s.toString().split("")
+    let arr = s.toString().split("") // 
     for(let i= 0; i < arr.length; i++){
         let bracket = arr[i]
         if(pairBrackets[bracket]){
