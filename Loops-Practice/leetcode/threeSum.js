@@ -52,7 +52,7 @@ const addsUpThreeSumEqualZero = (nums) => {
     }
     return result
 }
-console.log(addsUpThreeSumEqualZero([-1,0,1,2,-1,-4,-2,-3,3,0,4])) // [[-4,0,4],[-4,1,3],[-3,-1,4],[-3,0,3],[-3,1,2],[-2,-1,3],[-2,0,2],[-1,-1,2],[-1,0,1]]
+//console.log(addsUpThreeSumEqualZero([-1,0,1,2,-1,-4,-2,-3,3,0,4])) // [[-4,0,4],[-4,1,3],[-3,-1,4],[-3,0,3],[-3,1,2],[-2,-1,3],[-2,0,2],[-1,-1,2],[-1,0,1]]
 //console.log(addsUpThreeSumEqualZero([-1,0,1,2,-1,-4,-2,-3,3,0,4]))
 
 
@@ -94,4 +94,5 @@ const threeSum = (nums) => {
 
     return results
 };
-console.log(threeSum([-1, 0, 1, 2, -1, -4]))
+//console.log(threeSum([-1, 0, 1, 2, -1, -4]))
+console.log(threeSum([-1,0,1,2,-1,-4,-2,-3,3,0,4]))
