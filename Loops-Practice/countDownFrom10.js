@@ -22,3 +22,14 @@ const countNumberDown = ()=> {
   }
 }
 countNumberDown()
+
+
+const countDown1 = () => {
+  let arr = []
+  for(let i = 10; i > 0; i--){
+    arr.push(i)
+  }
+  return arr
+
+  }
+  console.log(countDown1())
