@@ -21,7 +21,7 @@ const countNumberDown = ()=> {
   console.log(i)
   }
 }
-countNumberDown()
+//countNumberDown()
 
 
 const countDown1 = () => {
@@ -32,4 +32,14 @@ const countDown1 = () => {
   return arr
 
   }
-  console.log(`The count down is:`,countDown1())
+  //console.log(`The count down is:`,countDown1())
+
+
+  const countdown2 = (number) => {
+    let arrayCount = [];
+    for(let i = number; i >= 0; i--) {
+        arrayCount.push(i)
+    }
+  return arrayCount
+  }
+  console.log(`Maria count down is`,countdown2(11));
