@@ -2,14 +2,14 @@
 
 const countDown = () => {
     let array =[]
-  for (let i = 10; i > 0; i--) {
-    console.log(i)
+  for (let i = 8; i >= 0; i--) {
+    //console.log(i)
     array.push(i)
   }
   return(array)
 }
 
-//console.log(countDown())
+console.log(countDown())
 
 
 
@@ -26,10 +26,10 @@ countNumberDown()
 
 const countDown1 = () => {
   let arr = []
-  for(let i = 10; i > 0; i--){
+  for(let i = 10; i >= 0; i--){
     arr.push(i)
   }
   return arr
 
   }
-  console.log(countDown1())
+  console.log(`The count down is:`,countDown1())
