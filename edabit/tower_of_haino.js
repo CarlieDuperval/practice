@@ -13,10 +13,18 @@
 // The amount of discs is always a positive integer.
 // 1 disc can be changed per move.
 
-// create a function towerHaino = (disc)=> {}
+// create a function towerHanoi = (disc)=> {}
 	// 2 discs => 3 moves
 	// 3 discs => 7 moves
 	// 4 discs => 15 moves
 	// 5 discs => 31 moves
 	// m = 2^d -1
     // if disc === 0 => return 0  else : return 
+
+    const towerHanoi = (discs) => {
+        if(discs === 0){
+            return 0
+        }
+        return (Math.pow(2, discs)-1)
+    }
+    console.log(towerHanoi(5))
