@@ -4,6 +4,9 @@ while (n > 10) {
     console.log(n)
     n = n + 1
 }
-console.log(n)
+//console.log(n)
 
 
+let number = 5;
+let subtracted = 5-1;
+console.log("The number before" + number + "is" + subtracted + ".");
