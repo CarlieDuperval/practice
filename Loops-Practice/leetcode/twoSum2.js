@@ -19,3 +19,22 @@ console.log(addUpNumberToTarget([15, 7, 11, 2],9))
 // use a map 
 // create a set
 // add every element to the set 
+// find if targ-a[i] is in the set
+
+
+const twoSumWSet= (arr, targ) =>{
+    const set = new Set()
+    for (let i =0; i < arr.length; i++){
+        set.add(arr[i])
+
+    }
+
+
+}
+
+for (let i =0; i < arr.length; i++){
+    const num = targ - arr[i]
+    if(set.has(num)){
+        return [arr[i], num]
+    }
+}
