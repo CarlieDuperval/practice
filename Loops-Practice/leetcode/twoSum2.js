@@ -13,7 +13,7 @@ const addUpNumberToTarget = (nums , target) => {
         } 
     }
 }
-console.log(addUpNumberToTarget([15, 7, 11, 2],9))
+//console.log(addUpNumberToTarget([15, 7, 11, 2],9))
 
 
 // Approach 2
@@ -34,12 +34,12 @@ const twoSumWSet= (arr, targ) =>{
 
 }
 
-for (let i =0; i < arr.length; i++){
-    const num = targ - arr[i]
-    if(set.has(num)){
-        return [arr[i], num]
-    }
-}
+// for (let i =0; i < arr.length; i++){
+//     const num = targ - arr[i]
+//     if(set.has(num)){
+//         return [arr[i], num]
+//     }
+// }
 
 
 // 3em Approach is sorting
@@ -47,14 +47,14 @@ for (let i =0; i < arr.length; i++){
 // - Use two pointers algo to find target
 // 
 
-const twoSumSort = (arr1, targ) => {
-    const sort = arra1.sort((a,b)=>a-b) // this is the synthax for sorting 
+const twoSumSort = (arr1, target) => {
+    const sort = arr1.sort((a, b ) => a-b) // this is the synthax for sorting 
        let i = 0, j= sort.length-1
        while(i<j){
         const sum = sort[i] + sort[j];
-        if(sum > targ){
+        if(sum > target){
             j--;
-        elseif(sum < targ)
+        elseif(sum < target)
         {
             i++
         }
@@ -64,3 +64,4 @@ const twoSumSort = (arr1, targ) => {
        }
     
 }
+console.log(twoSumSort([9, 2, 5, 4, 7, 1, 3], 12))
