@@ -56,14 +56,12 @@
 
 
 const mergeArray = (nums1, m , nums2, n) => {    
-     const newArr = nums1.concat(nums2)
-     newArr.sort((a,b) => a - b)
-
-     return newArr.slice(m+n-n)
+     const newArr = (nums1.concat(nums2)).sort((a, b) => a -b)
+    return newArr.slice(m+n-n)
 
  }
 
-//console.log(mergeArray([1,2,3,0,0,0] ,3,[2,5,6],3 ))
+console.log(mergeArray([1,2,3,0,0,0] ,3,[2,5,6],3 ))
 
 
 
@@ -83,4 +81,4 @@ const merge = (nums1, m, nums2, n) => {
     return nums1
 };
 
-console.log(merge(arr1, a, arr2, b))
+//console.log(merge(arr1, a, arr2, b))
