@@ -1,10 +1,24 @@
-// You are given two integer arrays nums1 and nums2, sorted in non-decreasing order, and two integers m and n, representing the number of elements in nums1 and nums2 respectively.
+// You are given two integer arrays nums1 and nums2, sorted in non-decreasing order,
+// and two integers m and n, representing the number of elements in nums1 and nums2 respectively.
 
 // Merge nums1 and nums2 into a single array sorted in non-decreasing order.
 
-// The final sorted array should not be returned by the function, but instead be stored inside the array nums1. To accommodate this, nums1 has a length of m + n, where the first m elements denote the elements that should be merged, and the last n elements are set to 0 and should be ignored. nums2 has a length of n.
+// The final sorted array should not be returned by the function, but instead be
+// stored inside the array nums1. To accommodate this, nums1 has a length of m + n, 
+//where the first m elements denote the elements that should be merged, 
+//and the last n elements are set to 0 and should be ignored. nums2 has a length of n.
 
- 
+ //
+ // const mergeArray = (nums1, nums2) => {}
+ // merged = nums1.length + nums2.length
+ // cont newArr = nums1.slice(0, m).concat(nums2.slice(0, n)).sort((a,b) => a - b)
+ // m = nums1.length
+ // n = nums2.length
+
+
+
+
+
 
 // Example 1:
 
@@ -24,7 +38,8 @@
 // Output: [1]
 // Explanation: The arrays we are merging are [] and [1].
 // The result of the merge is [1].
-// Note that because m = 0, there are no elements in nums1. The 0 is only there to ensure the merge result can fit in nums1.
+// Note that because m = 0, there are no elements in nums1. 
+//The 0 is only there to ensure the merge result can fit in nums1.
  
 
 // Constraints:
@@ -37,3 +52,15 @@
  
 
 // Follow up: Can you come up with an algorithm that runs in O(m + n) time?
+
+
+
+const mergeArray = (nums1, m , nums2, n) => {    
+     const newArr = nums1.concat(nums2)
+     newArr.sort((a,b) => a - b)
+
+     return newArr.slice(m+n-n)
+
+ }
+
+console.log(mergeArray([1,2,3,0,0,0] ,3,[2,5,6],3 ))
