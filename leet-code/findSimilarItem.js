@@ -5,7 +5,7 @@ const cart = ["beer", "Wine", "Chips", "Bread"]
 
 
 // studio coding 
-// crate an empty arry to store the new list
+// crate an empty array to store the new list
 // iterate over all elements of arr1 with a loop
 //Iterate over all elements of array2 using another loop and check if array1[element] is present in array2.
 
