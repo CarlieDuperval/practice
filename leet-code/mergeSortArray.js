@@ -68,17 +68,17 @@ const mergeArray = (nums1, m , nums2, n) => {
 
 
 
-const arr1 = [1,2,3,0,0,0]
+const arr1 = [4,5,6,0,0,0]
 const arr2 = [2,8,9]
 let a = 3
 let b = 3
 
 const merge = (nums1, m, nums2, n) => {
-    let insertPos = m + n - 1;
+    let insertNum = m + n - 1;
     m--;
     n--;
     while (n >= 0) {
-        nums1[insertPos--] = (nums1[m] > nums2[n]) ? nums1[m--] : nums2[n--];
+        nums1[insertNum--] = (nums1[m] > nums2[n]) ? nums1[m--] : nums2[n--];
     }
     return nums1
 };
