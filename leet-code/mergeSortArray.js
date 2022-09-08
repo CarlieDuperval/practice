@@ -8,18 +8,6 @@
 //where the first m elements denote the elements that should be merged, 
 //and the last n elements are set to 0 and should be ignored. nums2 has a length of n.
 
- //
- // const mergeArray = (nums1, nums2) => {}
- // merged = nums1.length + nums2.length
- // cont newArr = nums1.slice(0, m).concat(nums2.slice(0, n)).sort((a,b) => a - b)
- // m = nums1.length
- // n = nums2.length
-
-
-
-
-
-
 // Example 1:
 
 // Input: nums1 = [1,2,3,0,0,0], m = 3, nums2 = [2,5,6], n = 3
@@ -53,15 +41,29 @@
 
 // Follow up: Can you come up with an algorithm that runs in O(m + n) time?
 
-
+//
+ // const mergeArray = (nums1, nums2) => {}
+ // merged = nums1.length + nums2.length
+ // cont newArr = nums1.slice(0, m).concat(nums2.slice(0, n)).sort((a,b) => a - b)
+ // m + n = nums1.length
+ // n = nums2.length
 
 const mergeArray = (nums1, m , nums2, n) => {    
      const newArr = (nums1.concat(nums2)).sort((a, b) => a -b)
-    return newArr.slice(m+n-n)
+    return newArr.slice(m+n-n) // 
+  
 
  }
 
-console.log(mergeArray([1,2,3,0,0,0] ,3,[2,5,6],3 ))
+console.log(mergeArray([1,2,3,0,0,0] ,3,[2,5,6],1 ))
+
+const mergeArray1 = (nums1 , m, nums2, n) => {
+   const newArr= [...nums1,...nums2].slice(m+n -n)
+    return newArr
+}
+console.log(mergeArray1([9,8,7,0,0,0] ,3,[2,5,6],3 ))
+
+
 
 
 
@@ -81,4 +83,7 @@ const merge = (nums1, m, nums2, n) => {
     return nums1
 };
 
-//console.log(merge(arr1, a, arr2, b))
+console.log(merge(arr1, a, arr2, b))
+
+
+
