@@ -40,7 +40,7 @@
 // It does not matter what you leave beyond the returned k (hence they are underscores).
 // Example 2:
 
-// Input: nums = [0,0,1,1,1,2,2,3,3,4]
+// Input: nums = [null,0,1,1,1,2,2,3,3,4]
 // Output: 5, nums = [0,1,2,3,4,_,_,_,_,_]
 // Explanation: Your function should return k = 5, 
 //with the first five elements of nums being 0, 1, 2, 3, and 4 respectively.
@@ -63,8 +63,49 @@ for(let i = 0; i<nums.length; i++){
 }
     return newArr
 }
-console.log(uniqueInteger([1, 1, 1, 2]))
+//console.log(uniqueInteger([1, 1, 1, 2]))
 
-const removeDuplicates = () => {
+
+const numbers = [0,0,0,0,1,1,1,2,3,3,4]
+//const numbers = [1,1,2]
+
+// output = [0,1,2,3,4]  k= 5
+
+// const removeDuplicates = (array) => {
+//     let newArray = []
+//     for(let i = 0; i < array.length; i++){
+//         if(array[i] !== array[i+1]){
+//             newArray.push(array[i])
+//         }
+//     }
+//     return newArray
     
-}
+// }
+//console.log(removeDuplicates(numbers))
+
+
+
+// const removeDuplicates = function(nums) {
+//     let newArr = []
+// for(let i = 0; i<nums.length; i++){
+//     if(nums[i] !== nums[i+1]){
+//         newArr.push(nums[i])
+//     }
+// }
+// return newArr
+    
+// };
+// console.log(removeDuplicates(numbers))
+
+const removeDuplicates = (nums) => {
+    for(let i = 0; i<nums.length;){
+        if(nums[i] === nums[i+1]){
+            nums.splice(i, 1) 
+        } else{
+            i++
+        }
+    } return nums
+    
+        
+    };
+    console.log(removeDuplicates(numbers))
