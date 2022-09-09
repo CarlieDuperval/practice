@@ -1,20 +1,18 @@
-// 26. Remove Duplicates from Sorted Array
-// Easy
+//  Remove Duplicates from Sorted Array
+// Given an integer array nums sorted in non-decreasing order, 
+//remove the duplicates in-place such that each unique element appears only once.
+// The relative order of the elements should be kept the same.
 
-// 8052
-
-// 11696
-
-// Add to List
-
-// Share
-// Given an integer array nums sorted in non-decreasing order, remove the duplicates in-place such that each unique element appears only once. The relative order of the elements should be kept the same.
-
-// Since it is impossible to change the length of the array in some languages, you must instead have the result be placed in the first part of the array nums. More formally, if there are k elements after removing the duplicates, then the first k elements of nums should hold the final result. It does not matter what you leave beyond the first k elements.
+// Since it is impossible to change the length of the array in some languages,
+// you must instead have the result be placed in the first part of the array nums.
+// More formally, if there are k elements after removing the duplicates,
+// then the first k elements of nums should hold the final result. 
+//It does not matter what you leave beyond the first k elements.
 
 // Return k after placing the final result in the first k slots of nums.
 
-// Do not allocate extra space for another array. You must do this by modifying the input array in-place with O(1) extra memory.
+// Do not allocate extra space for another array. 
+//You must do this by modifying the input array in-place with O(1) extra memory.
 
 // Custom Judge:
 
@@ -52,3 +50,15 @@
 // 1 <= nums.length <= 3 * 104
 // -100 <= nums[i] <= 100
 // nums is sorted in non-decreasing order.
+
+
+const uniqueInteger = (nums) => {
+    const newArr = []
+for(let i = 0; i<nums.length; i++){
+    if(nums[i] !== nums[i+1]){
+        newArr.push(nums[i])
+    }
+}
+    return newArr
+}
+console.log(uniqueInteger([2, 4, 4, 4, 5, 5, 6, 7, 7, 8,]))
