@@ -66,7 +66,7 @@ for(let i = 0; i<nums.length; i++){
 //console.log(uniqueInteger([1, 1, 1, 2]))
 
 
-const numbers = [0,0,0,0,1,1,1,2,3,3,4]
+const numbers = [0,0,0,0,1,1,1,2,3,3,4,5]
 //const numbers = [1,1,2]
 
 // output = [0,1,2,3,4]  k= 5
