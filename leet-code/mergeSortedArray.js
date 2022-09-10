@@ -57,13 +57,13 @@ const mergeArray = (nums1, m , nums2, n) => {
 
  }
 
-console.log(mergeArray([1,2,3,0,0,0] ,3,[2,5,6],1 ))
+//console.log(mergeArray([1,2,3,0,0,0] ,3,[2,5,6],1 ))
 
 const mergeArray1 = (nums1 , m, nums2, n) => {
    const newArr= [...nums1,...nums2].slice(m+n -n)
     return newArr
 }
-console.log(mergeArray1([9,8,7,0,0,0] ,3,[2,5,6],3 ))
+//console.log(mergeArray1([9,8,7,0,0,0] ,3,[2,5,6],3 ))
 
 
 
@@ -72,8 +72,8 @@ console.log(mergeArray1([9,8,7,0,0,0] ,3,[2,5,6],3 ))
 
 const arr1 = [4,5,6,0,0,0]
 const arr2 = [2,8,9]
-let a = 3
-let b = 3
+let a1 = 3
+let b1 = 3
 
 const merge = (nums1, m, nums2, n) => {
     let insertNum = m + n - 1;
@@ -85,7 +85,28 @@ const merge = (nums1, m, nums2, n) => {
     return nums1
 };
 
-console.log(merge(arr1, a, arr2, b))
+//console.log(merge(arr1, a, arr2, b))
+
+
+const mergeIt = (nums1, m, nums2, n) => {
+    
+}
 
 
 
+
+const mergeI = (nums1, m, nums2, n) => {
+    
+    if (!n)
+     return;    
+     
+    for (let i = 0; i < n; i++) {
+        nums1[m+i] = nums2[i];
+    }
+    
+    nums1.sort((a,b) => {
+        return a - b;
+    });
+    
+}; 
+console.log(mergeI(arr1, a1, arr2, b1))
