@@ -98,8 +98,9 @@ const numbers = [0,0,0,0,1,1,1,2,3,3,4,5]
 // console.log(removeDuplicates(numbers))
 
 const removeDuplicates = (nums) => {
-    for(let i = 0; i<nums.length;){
+    for(let i = 0; i<nums.length-1;){
         if(nums[i] === nums[i+1]){
+            // replace 1 element at index i
             nums.splice(i, 1) 
         } else{
             i++

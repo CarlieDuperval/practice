@@ -73,7 +73,7 @@ const mergeArray1 = (nums1 , m, nums2, n) => {
 const arr1 = [4,5,6,0,0,0]
 const arr2 = [2,8,9]
 let a1 = 3
-let b1 = 3
+let b1 = 0
 
 const merge = (nums1, m, nums2, n) => {
     let insertNum = m + n - 1;
@@ -99,7 +99,7 @@ const mergeI = (nums1, m, nums2, n) => {
     
     if (!n)
      return;    
-     
+
     for (let i = 0; i < n; i++) {
         nums1[m+i] = nums2[i];
     }
