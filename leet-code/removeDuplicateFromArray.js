@@ -71,6 +71,7 @@ const numbers = [0,0,0,0,1,1,1,2,3,3,4,5]
 
 // output = [0,1,2,3,4]  k= 5
 
+// This approach create a copy of the array
 // const removeDuplicates = (array) => {
 //     let newArray = []
 //     for(let i = 0; i < array.length; i++){
@@ -84,7 +85,7 @@ const numbers = [0,0,0,0,1,1,1,2,3,3,4,5]
 //console.log(removeDuplicates(numbers))
 
 
-
+// This approach create a copy of the array
 // const removeDuplicates = function(nums) {
 //     let newArr = []
 // for(let i = 0; i<nums.length; i++){
