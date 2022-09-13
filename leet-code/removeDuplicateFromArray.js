@@ -88,7 +88,7 @@ const numbers = [0,0,0,0,1,1,1,2,3,3,4,5]
 // This approach create a copy of the array
 // const removeDuplicates = function(nums) {
 //     let newArr = []
-// for(let i = 0; i<nums.length; i++){
+// for(let i = 0; i<nums.length-1; i++){
 //     if(nums[i] !== nums[i+1]){
 //         newArr.push(nums[i])
 //     }
