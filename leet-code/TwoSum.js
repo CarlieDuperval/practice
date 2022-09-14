@@ -61,19 +61,25 @@ const twoSum = (nums, target) => {
 //if nums[i] + nums[j] === target 
 // return [i, j]
 
-let nums3 = [12,7,18,5]
-let target3 = 17
+let nums3 = [3,2,4]
+let target3 = 6
 const twoSum3 = (num3, target3) => {
-    const result = num3.sort((a ,b)=> a - b)
+    const sorted = num3.sort((a ,b)=> a - b)
     let i = 0;
-    let j = result.length-1;
+    let j = sorted.length-1;
     while( i < j){
-        if(num3[i] + num3[j] === target3){
+        const sum = sorted[i] + sorted[j]
+        if(sum > target3){
+            j--;
+        }else if ( sum < target3){
+            i++;
+        } else {
             return [i, j]
+
+        }
         }
 
     }
 
-}
 console.log(twoSum(nums3, target3))
 
