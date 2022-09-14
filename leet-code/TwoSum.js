@@ -54,3 +54,9 @@ const twoSum = (nums, target) => {
    
   };
   console.log(twoSum(nums2, target2))
+
+  // Approach
+// sort : nums.sort((a,b)=> a - b)
+// while loop while(i < j)
+//if nums[i] + nums[j] === target 
+// return target
