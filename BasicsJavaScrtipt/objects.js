@@ -1,3 +1,4 @@
+
 const person = {
     name: "Carlie",
     age: 16,
@@ -12,7 +13,9 @@ console.log('Person is Called ', person.name)
 // console.log("Person is Called", person[name])
 console.log(`Person's address is `, person.address1)
 
-console.log(`My name is ${person.name}  and
-I'm this old ${person.age}`)
+// console.log(`My name is ${person.name}  and
+// I'm this old ${person.age}`)
 
-
+const name = person.name
+const age = person.age
+console.log(`My name is ${name} and I'm this old ${age}`  )
