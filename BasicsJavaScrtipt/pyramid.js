@@ -32,8 +32,6 @@ const printPyramid = (n) => {
        console.log("\n")
     }
 
-    
-
 } 
 printPyramid(5)
 

@@ -309,7 +309,7 @@ console.log(addNumbers(5,6))
 
 
 // Write a function called myFunction pass in 2 parameters and return the product of 2 numbers. console log the retur
-n
+//n
 
 function myFunction ( num1, num2){
     let result = num1 * num2
